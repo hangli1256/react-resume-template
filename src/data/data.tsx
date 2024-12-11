@@ -9,10 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -69,18 +66,17 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Hang Li.`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+      <p className="prose-sm text-white sm:prose-base lg:prose-lg style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1)' }}">
+        I'm a Brussels based <strong className="text-white">Software QA Automation Engineer</strong>, currently working
+        as <strong className="text-white">Freelance</strong> helping build a modern, solid, user-friendly testing framework.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+      <p className="prose-sm text-white sm:prose-base lg:prose-lg drop-shadow-lg">
+        In my free time time, you can catch me training in <strong className="text-white">Ski</strong>,
+        scuba <strong className="text-white">diving</strong>, or exploring beautiful{' '}
+        <strong className="text-white">nature</strong>.
       </p>
     </>
   ),
@@ -104,16 +100,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I am a self-motivated Software QA/Automation Engineer with 5 years of experience in SaaS development, specializing in test design, implementation, and maintenance.
+  My goal is to increase user satisfaction and reduce the build failure rate through continuous optimization and rigorous quality assurance.
+  Aspiring to utilize JavaScript/TypeScript and Playwright expertise to improve user-friendly, visually appealing applications.No work permit required.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+    {label: 'Location', text: 'Brussels, BE', Icon: MapIcon},
     {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Nationality', text: 'Chinese', Icon: FlagIcon},
+    {label: 'Interests', text: 'Ski, Diving, Camping', Icon: SparklesIcon},
+    {label: 'Study', text: 'VUB, NPU, UCSD', Icon: AcademicCapIcon},
+    {label: 'EX-Employment', text: 'Sitecore', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -133,59 +129,59 @@ export const skills: SkillGroup[] = [
         level: 4,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Chinese',
+        level: 10,
       },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Programming Languages',
     skills: [
       {
-        name: 'React',
+        name: 'Typescript',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
+        name: 'Python',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Java',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Automation Tools',
+    skills: [
+      {
+        name: 'Playwright',
+        level: 9,
       },
       {
-        name: 'Golang',
+        name: 'Selenium',
+        level: 8,
+      },
+      {
+        name: 'Cypress',
         level: 4,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Others',
     skills: [
       {
-        name: 'React Native',
+        name: 'CI/CD Integration',
+        level: 7,
+      },
+      {
+        name: 'Test Management Tools',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
+        name: 'Performance Testing',
+        level: 8,
       },
     ],
   },
@@ -268,40 +264,44 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'August 2020',
+    location: 'VUB',
+    title: 'Master of Science in Applied Science And Engineering: Applied Computer Science',
+    content: <p>Faculty of Engineering</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'September 2017',
+    location: 'NPU',
+    title: ' Bachelor of Engineering(Microelectronics)',
+    content: <p>School of Software and Microelectronics</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'January 2021 - August 2024',
+    location: 'Sitecore',
+    title: 'Software QA automation Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>&bull;  Testing in the production and QA environments. Conducting detailed analysis of business and technical requirements.  Creating test plans, test suites, test cases, and bug reports.</li>
+        <li>&bull;  A main contributor to GUI automation framework. Using Playwright/JavaScript to automate E2E test cases and is responsible for CI/CD daily report.</li>
+        <li>&bull;  Owner of the Content Hub performance testing. Using K6 and artillery and a self-build internal tool for API and browser page performance testing. Documenting and reporting the results regularly.</li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'September 2019 - January 2021',
+    location: 'Sitecore',
+    title: 'Junior Software QA Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul>
+        <li>&bull;  Testing desktop and mobile web application versions in QA environments.</li>
+        <li>&bull;  Develop flow-based test cases under test plan and functional requirements.</li>
+        <li>&bull;  GUI automation framework contributor. Using Selenium/C# to maintain and to automate E2E test cases.</li>
+        <li>&bull;  Maintaining internal team tools and slack bots. Such as a content hub localization tool, and a daily Jira bug/improve report bot.</li>
+        <li>&bull;  Reporting bugs and performing bug fix verification testing.</li>
+      </ul>
     ),
   },
 ];
@@ -314,7 +314,7 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      text: 'Collaborating with Lee was a pleasure. They have a unique ability to tackle complex challenges with creativity and precision. Their positive attitude and technical skills in [specific area] consistently elevate the quality of our team’s work.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
@@ -336,27 +336,22 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out to me',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'lh125699@gmail.com',
+      href: 'mailto:lh125699@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Brussels, Belgium',
+      href: 'https://www.google.com/maps/place/Brussels/@50.8551154,4.3342174,15593m/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Lee',
+      href: 'https://github.com/hangli1256',
     },
   ],
 };
@@ -365,9 +360,6 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/hangli1256'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/hangli033/'},
 ];
