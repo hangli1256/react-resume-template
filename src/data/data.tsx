@@ -24,6 +24,7 @@ import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+
 import {
   About,
   ContactSection,
@@ -313,19 +314,19 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Collaborating with Lee was a pleasure. They have a unique ability to tackle complex challenges with creativity and precision. Their positive attitude and technical skills in [specific area] consistently elevate the quality of our team’s work.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Pavlo Safonov',
+      text: 'Hey Lee, thank you for being a good colleague and thank you for your good advice regarding EcoFlow and other energy-saving tech. ;)Hope that the test automation experience that you got in Sitecore will help you in your future career.',
+      image: '/Pavlo.png',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Kadjel',
+      text: 'It’s been a pleasure working with you. I wish you all the best for the future. ❤️.',
+      image: '/Kadjel.png',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+      name: 'Bharathwaj',
+      text: 'You are the best when it comes to performance testing. I will miss you a lot. All the best for the future!!',
+      image: '/Bharathwaj.png',
     },
   ],
 };
